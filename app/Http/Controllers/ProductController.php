@@ -35,7 +35,14 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         //
+        //Instanciamos la clase Pokemons
+        $product = new Product;
+        //Declaramos el nombre con el nombre enviado en el request
+        $product->name = $request->name;
+        $product->details = $request->details;
+        //Guardamos el cambio en nuestro modelo
+        $product->save();
     }
 
     /**
@@ -46,7 +53,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return Product::where('id', $product->$id)->get();
     }
 
     /**
