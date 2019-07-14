@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Unit;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -16,5 +16,15 @@ class ProductTest extends TestCase
     public function testExample()
     {
         $this->assertTrue(true);
+    }
+
+    public function it_store_product(){
+        $response = $this->json('POST', '/product', ['name' => 'pantalon','details'=>'de mezclilla chino']);
+
+        $response
+            ->assertStatus(201)
+            ->assertJson([
+                'created' => true,
+            ]);
     }
 }
