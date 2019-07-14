@@ -12,15 +12,7 @@ class ProductSeeder extends Seeder
      * @return void
      */
     public function run()
-    {  /* $i=1;
-        while ($i<=100){
-            \App\Product::create([
-                'name'=>'product'.$i,
-                'details'=>'product'.$i.' details'
-            ]);
-            $i++;
-        }*/
-
+    { 
         factory(Product::class,100)->create();
     }
 }
