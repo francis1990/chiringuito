@@ -16,9 +16,17 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::resource('debts', 'DebtController');
-Route::resource('payments', 'PaymentController');
-Route::resource('products', 'ProductController');
-Route::resource('purchases', 'PurchaseController');
-Route::resource('sales', 'SaleController');
-Route::resource('sellers', 'SellerController');
+
+
+//Francis pon todas tus rutas api dentro de este middleware
+Route::group(['middleware' => ['cors']], function(){ 
+
+   Route::resource('debts', 'DebtController');
+   Route::resource('payments', 'PaymentController');
+   Route::resource('products', 'ProductController');
+   Route::resource('purchases', 'PurchaseController');
+   Route::resource('sales', 'SaleController');
+   Route::resource('sellers', 'SellerController');
+
+});
+
