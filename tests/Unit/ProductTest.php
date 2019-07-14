@@ -18,7 +18,7 @@ class ProductTest extends TestCase
         $this->assertTrue(true);
     }
 
-    public function it_store_product(){
+    function it_store_product(){
         $response = $this->json('POST', '/product', ['name' => 'pantalon','details'=>'de mezclilla chino']);
 
         $response
