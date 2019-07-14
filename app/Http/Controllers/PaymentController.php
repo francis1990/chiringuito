@@ -46,7 +46,7 @@ class PaymentController extends Controller
      */
     public function show(Payment $payment)
     {
-        //
+        return Payment::where('id', $payment->id)->get();
     }
 
     /**

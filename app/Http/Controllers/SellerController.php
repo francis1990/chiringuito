@@ -46,7 +46,7 @@ class SellerController extends Controller
      */
     public function show(Seller $seller)
     {
-        //
+        return Seller::where('id', $seller->id)->get();
     }
 
     /**

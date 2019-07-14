@@ -46,7 +46,7 @@ class DebtController extends Controller
      */
     public function show(Debt $debt)
     {
-        //
+        return Debt::where('id', $debt->id)->get();
     }
 
     /**

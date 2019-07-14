@@ -46,7 +46,7 @@ class PurchaseController extends Controller
      */
     public function show(Purchase $purchase)
     {
-        //
+        return Purchase::where('id', $purchase->id)->get();
     }
 
     /**
