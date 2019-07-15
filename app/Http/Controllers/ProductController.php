@@ -39,14 +39,22 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-         //
-        //Instanciamos la clase Pokemons
-        $product = new Product;
-        //Declaramos el nombre con el nombre enviado en el request
-        $product->name = $request->name;
-        $product->details = $request->details;
-        //Guardamos el cambio en nuestro modelo
-        $product->save();
+    
+         return response()->json([$request->all()]);
+
+        $validator = request()->validate([
+            'name'=>'required',
+            'details'=>'required',
+        ],[
+            'name.required'=>'El nombre es requerido',
+            'details.required'=>'El details es requerido',
+        ]);
+        if ($validator->fails()){
+            //dd($validator->errors());
+            return response()->json($validator->errors()->all());
+        }
+        $new_product = Product::create($request->all());
+        return $new_product;
     }
 
     /**
