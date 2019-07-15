@@ -28,6 +28,7 @@ Route::group(['middleware' => ['cors']], function(){
    Route::resource('sales', 'SaleController');
    Route::resource('sellers', 'SellerController');*/
 
+   //Francis asi especificamos las api mira el route:list (r:l)
    Route::apiResource('debts', 'DebtController');
    Route::apiResource('payments', 'PaymentController');
    Route::apiResource('products', 'ProductController');
