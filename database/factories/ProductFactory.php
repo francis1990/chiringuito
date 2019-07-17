@@ -5,7 +5,7 @@ use App\Models\Product;
 
 $factory->define(Product::class, function (Faker $faker) {
     return [
-        'name' => $faker->unique()->sentence,
-        'details' => $faker->paragraph,
+        'name' => $faker->unique()->company,
+        'details' => $faker->realText($maxNbChars = 100, $indexSize = 2),
     ];
 });
