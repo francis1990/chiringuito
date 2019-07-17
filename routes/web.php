@@ -29,3 +29,10 @@ Route::get('my-theme', function () {
     return view('welcome2');
 
 });
+
+//D:\Software_instalados\laragon\www\chiringuito\vendor\jeroennoten\laravel-adminlte\resources\views
+Route::get('login2', function () {
+
+    return view('login2');
+
+});
