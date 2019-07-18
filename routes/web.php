@@ -34,6 +34,7 @@ Route::get('/products', function () {
 })
 ->name('products');
 
+
 Route::get('login2', function () {
     return view('login2');
 });
