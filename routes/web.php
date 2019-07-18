@@ -29,8 +29,8 @@ Route::get('my-theme', function () {
     return view('welcome2');
 
 });
-Route::get('/product/list', function () {
-    return view('produc/index');
+Route::get('/product', function () {
+    return view('product/index');
 });
 
 Route::get('login2', function () {
