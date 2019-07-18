@@ -7,7 +7,10 @@ var vue = new Vue({
 
 	},
 	methods:{
-		getProduct
+		getProducts:function(){
+              let api_url_products = "Url"
+              
+		},
 	},
 
 });
