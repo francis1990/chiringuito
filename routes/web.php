@@ -32,3 +32,7 @@ Route::get('my-theme', function () {
 Route::get('/product/list', function () {
     return view('produc/index');
 });
+
+Route::get('login2', function () {
+    return view('login2');
+});
