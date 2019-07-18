@@ -7,17 +7,17 @@
 @stop
  
  @section('js')
-    <script src="{{ asset('js/app.js') }}" defer></script> 
+    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}} 
     <script type="text/javascript">
                    var datos_SERVER = {
                        url_server: 'http://chiringuito.test/',
                        token: $('#token_server').attr('data_token')
                    };
     </script>
-    <script src="{{asset('libs/toastr/toastr.js')}}"></script>
+    
     <script src="{{asset('libs/vue/vue.js')}}"></script>
-    <script src="{{asset('libs/vue/vuejs-datepicker.min.js')}}"></script>
     <script src="{{asset('libs/axios/axios.js')}}"></script>
+    <script src="{{asset('libs/toastr/toastr.js')}}"></script>
 
     @yield('js-main')
 @stop

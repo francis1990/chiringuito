@@ -7,8 +7,8 @@
 @stop
 
 @section('content-main')
-
-    <div class="row">
+<div id='app_producto'>
+    <div  class="row">
         <div class="col-md-12">
             <div class="box">
                 <div class="box-header">
@@ -32,9 +32,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for="prod in list_product">
-                                <td class="">@{{ prod.name }}</td>
-                                <td>@{{ prod.Details }}</td>
+                            <tr v-for="item in products">
+                                <td>@{{ item.name }}</td>
+                                <td>@{{ item.details }}</td>
                                 <td>
                                     <a href="#" class=""></a><i class="fa fa-eye"></i> &nbsp;
                                     <a href="#" class=""></a><i class="fa fa-pencil text-green"></i> &nbsp;
@@ -89,6 +89,7 @@
           </div>
           <!-- /.modal-dialog -->
         </div>
+ </div>       
 @stop
 
 @section('css')
