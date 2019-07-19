@@ -1,6 +1,5 @@
-Vue.component('tabla-products',{
-  template: `
-          <table id="products" class="table table-bordered table-striped" >
+<template>
+	                <table id="products" class="table table-bordered table-striped" >
                         <thead>
                             <tr>
                                 <th > Name</th>
@@ -20,17 +19,19 @@ Vue.component('tabla-products',{
                             </tr>
                         </tbody>
                     </table>
-     `,
-     created:function(){
-          this.getProducts();
-     },
-     data:function(){
-      return {
-        products:[],
-      }
-     },
-     methods:{
-        getProducts:function(){
+
+  <script >
+  	export default {
+        mounted() {
+            this.getProducts()
+        },
+        data:function(){
+            return {
+                 products:[],
+            }
+        },
+        methods:{
+          getProducts:function(){
            let urlApiProducts = datos_SERVER.url_server+'api/products';
            axios.get(urlApiProducts).then(response => {
                 this.products=response.data;
@@ -43,21 +44,8 @@ Vue.component('tabla-products',{
                 }  */      
             });
            
-       },  
-   },
-})
-
-//Vue.component('tabla-products', require('./components/ExampleComponent.vue'));
-
-var vue = new Vue({
-  el:'#app_producto',
-});
-
-
-
-
-
-
-
-
-
+          },  
+       },
+    }
+  </script>                  
+</template>
