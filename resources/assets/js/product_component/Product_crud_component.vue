@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-    <!-- <product_form></product_form> -->
+    <product_form></product_form>
 </div>
 
 </template>

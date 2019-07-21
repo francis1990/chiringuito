@@ -34,7 +34,7 @@
 <script>
   	export default {
         mounted() {
-            this.getProducts()
+           
         },
     }    
 </script>                  
