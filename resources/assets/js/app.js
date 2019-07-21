@@ -3,7 +3,7 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 
-Vue.component('product-component', require('./components/ProductComponent.vue'));
+Vue.component('formproduct-component', require('./components/FormProductComponent.vue'));
 Vue.component('products-component', require('./components/ProductsComponent.vue'));
 var datos_SERVER = {
     url_server: 'http://chiringuito.test/',

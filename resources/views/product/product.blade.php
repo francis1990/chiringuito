@@ -16,15 +16,15 @@
                     <button type="button" data-toggle="modal" data-target="#modal-default" class="btn btn-block btn-primary btn-sm">
                         <i class="fa fa-file ">
                         </i> New</button>
-                    </div>
-                </div>
-            <!-- /.box-header -->
-                <div class="box-body">
-                <products-component></products-component>
                 </div>
             </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <products-component></products-component>
+            </div>
         </div>
-            <!-- /.box-body -->
     </div>
-    <product-component></product-component>
+            <!-- /.box-body -->
+</div>
+    <formproduct-component></formproduct-component>
 @endsection
