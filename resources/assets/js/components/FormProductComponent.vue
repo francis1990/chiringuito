@@ -30,14 +30,11 @@
           <!-- /.modal-dialog -->
         </div>
  </div>       
-
-  <script >
+</template>  
+<script>
   	export default {
-       mounted() {
-            console.log('Component mounted.')
-        }
-        
-       },
-    }
-  </script>                  
-</template>
+        mounted() {
+            this.getProducts()
+        },
+    }    
+</script>                  

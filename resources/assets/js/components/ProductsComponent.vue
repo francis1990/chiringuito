@@ -9,7 +9,7 @@
         </thead>
         <tbody>
             <tr v-for="item in products">
-                <td>{{ item.name }}</td>
+                <td>{{ item.name }} </td>
                 <td>{{ item.details }}</td>
                 <td>
                     <a href="#" class=""></a><i class="fa fa-eye"></i> &nbsp;
