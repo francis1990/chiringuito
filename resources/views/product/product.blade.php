@@ -31,13 +31,7 @@
             <!-- /.box-body -->
     </div>
 
-<div class="row">
-   <div class="col-sm-12">
-           <pre>
-             {{--  @{{$data}} --}}
-           </pre>
-    </div>
-</div>
+
           <!-- /.box -->
 
 

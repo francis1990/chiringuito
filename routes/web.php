@@ -15,7 +15,7 @@
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 Route::post('/prueba', 'ProductController@store');
 
@@ -38,3 +38,4 @@ Route::get('/products', function () {
 Route::get('login2', function () {
     return view('login2');
 });
+
