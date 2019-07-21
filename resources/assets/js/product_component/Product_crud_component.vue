@@ -1,5 +1,5 @@
 <template>
-   <div  class="row">
+<div  class="row">
         <div class="col-md-12">
             <div class="box">
                 <div class="box-header">
@@ -12,28 +12,11 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-                <products-component></products-component>
+                <product_table_list></product_table_list>
             </div>
         </div>
     </div>
-            <!-- /.box-body -->
+    <!-- <product_form></product_form> -->
 </div>
-    <formproduct-component></formproduct-component>
-</template>
 
-  <script >
-  	export default {
-        mounted() {
-           
-        },
-        data:function(){
-            return {
-                 products:[],
-            }
-        },
-        methods:{
-           
-          },  
-       },
-    }
-  </script>                  
+</template>

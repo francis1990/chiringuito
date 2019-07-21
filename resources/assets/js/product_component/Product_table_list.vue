@@ -43,7 +43,7 @@
            let urlApiProducts = datos_SERVER.url_server+'api/products';
            axios.get(urlApiProducts).then(response => {
                 this.products=response.data;
-               this.mytable()    
+                this.mytable();    
             });
            
           },  

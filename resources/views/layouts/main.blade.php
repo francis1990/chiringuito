@@ -10,7 +10,7 @@
      
     <script type="text/javascript">
                    var datos_SERVER = {
-                       url_server: 'http://chiringuito.test/',
+                       url_server: 'http://'+location.host+'/',
                        token: $('#token_server').attr('data_token')
                    };
     </script>
