@@ -13,9 +13,10 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <example-component></example-component>
+                    <products-component></products-component>
                     You are logged in!
                 </div>
+                <product-component></product-component>
             </div>
         </div>
     </div>
