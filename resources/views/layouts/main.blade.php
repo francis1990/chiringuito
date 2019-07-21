@@ -14,11 +14,6 @@
                        token: $('#token_server').attr('data_token')
                    };
     </script>
-     <script src="{{ asset('js/app.js') }}" defer></script> 
-    
-    {{--<script src="{{asset('libs/vue/vue.js')}}"></script>--}}
-    {{--<script src="{{asset('libs/axios/axios.js')}}"></script>--}}
-    {{--<script src="{{asset('libs/toastr/toastr.js')}}"></script>--}}
-
+     <script src="{{ asset('js/app.js') }}" ></script> 
     @yield('js-main')
 @stop
